@@ -184,13 +184,10 @@ public class Server {
                 continue; // return?
             }
 
-            String clientSentence;
-
-            BufferedReader fromClient;
             try {
-                fromClient = new BufferedReader(new InputStreamReader(
-                        connectionSocket.getInputStream()));
-                clientSentence = fromClient.readLine();
+                BufferedReader fromClient = new BufferedReader(
+                    new InputStreamReader(connectionSocket.getInputStream()));
+                String clientSentence = fromClient.readLine();
                 ++nReceived;
                 LOGGER.log(Level.INFO, "received " + clientSentence + ENDL);
             } catch (IOException e) {
