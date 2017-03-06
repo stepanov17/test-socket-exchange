@@ -1,0 +1,6 @@
+just a simple TCP/UDP client-server exchange example; the server is single-threaded
+
+To run the exchange, please place the "server" folder on the server host and execute
+javac Server.java
+java Server
+(having JAVA_HOME set and java bin added to PATH). The same for client.
