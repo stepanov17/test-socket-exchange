@@ -1,4 +1,4 @@
-just a simple TCP/UDP client-server exchange example; the server is single-threaded
+just a simple TCP/UDP client-server exchange example
 
 To run the exchange, please place the "server" folder on the server host and execute
 javac Server.java
